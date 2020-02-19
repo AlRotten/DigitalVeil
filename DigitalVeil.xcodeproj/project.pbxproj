@@ -3,19 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91410C1F7A4BD39418162920 /* Pods_DigitalVeil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F444AB811A74008A8C0FCC1A /* Pods_DigitalVeil.framework */; };
 		F235EB2423F2643500F29D9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F235EB2323F2643500F29D9C /* AppDelegate.swift */; };
 		F235EB2623F2643500F29D9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F235EB2523F2643500F29D9C /* ViewController.swift */; };
 		F235EB2923F2643500F29D9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F235EB2723F2643500F29D9C /* Main.storyboard */; };
 		F235EB2B23F2643700F29D9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F235EB2A23F2643700F29D9C /* Assets.xcassets */; };
 		F235EB2E23F2643700F29D9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F235EB2C23F2643700F29D9C /* LaunchScreen.storyboard */; };
+		F2547C7923FADDCC005F01F4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2547C7823FADDCC005F01F4 /* ProfileViewController.swift */; };
+		F2547C7B23FADEF0005F01F4 /* ManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2547C7A23FADEF0005F01F4 /* ManagementViewController.swift */; };
+		F2547C7D23FAE54E005F01F4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2547C7C23FAE54D005F01F4 /* CollectionViewCell.swift */; };
+		F2547C8123FAF57C005F01F4 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2547C8023FAF57C005F01F4 /* DetailedViewController.swift */; };
+		F2547C8323FAF5F0005F01F4 /* AppsDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2547C8223FAF5F0005F01F4 /* AppsDetailedViewController.swift */; };
+		F25D5AFB23F71E32009E0B19 /* ResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D5AFA23F71E32009E0B19 /* ResetViewController.swift */; };
+		F25D5AFD23F721BB009E0B19 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D5AFC23F721BB009E0B19 /* MapViewController.swift */; };
+		F25D5AFF23F7228B009E0B19 /* MapModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D5AFE23F7228B009E0B19 /* MapModels.swift */; };
+		F25D5B0123F724A4009E0B19 /* usage.csv in Resources */ = {isa = PBXBuildFile; fileRef = F25D5B0023F724A4009E0B19 /* usage.csv */; };
+		F267670B23F5642B00AB6C55 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F267670A23F5642B00AB6C55 /* LoginViewController.swift */; };
+		F267670D23F564E900AB6C55 /* DataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F267670C23F564E900AB6C55 /* DataHelpers.swift */; };
+		F267F1A323F59A4F00AF6A8B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F267F1A223F59A4F00AF6A8B /* User.swift */; };
+		F29270B923F5F623007EB5B4 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29270B823F5F623007EB5B4 /* NetworkUtils.swift */; };
+		F29270BB23F5F901007EB5B4 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29270BA23F5F901007EB5B4 /* Register.swift */; };
+		F2BA922723FB642900CC3241 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BA922623FB642900CC3241 /* RegisterViewController.swift */; };
+		F2BA922D23FBF80F00CC3241 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BA922C23FBF80F00CC3241 /* StatisticsViewController.swift */; };
+		F2BA922F23FC0B1100CC3241 /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BA922E23FC0B1100CC3241 /* ControlViewController.swift */; };
 		F2E3DFB923F3100900024FA0 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E3DFB823F3100900024FA0 /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		280486A3A35695B65543CCE9 /* Pods-DigitalVeil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalVeil.release.xcconfig"; path = "Target Support Files/Pods-DigitalVeil/Pods-DigitalVeil.release.xcconfig"; sourceTree = "<group>"; };
+		8A167C180F97C84901915676 /* Pods-DigitalVeil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalVeil.debug.xcconfig"; path = "Target Support Files/Pods-DigitalVeil/Pods-DigitalVeil.debug.xcconfig"; sourceTree = "<group>"; };
 		F235EB2023F2643400F29D9C /* DigitalVeil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalVeil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F235EB2323F2643500F29D9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F235EB2523F2643500F29D9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,7 +43,25 @@
 		F235EB2A23F2643700F29D9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F235EB2D23F2643700F29D9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F235EB2F23F2643700F29D9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2547C7823FADDCC005F01F4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F2547C7A23FADEF0005F01F4 /* ManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagementViewController.swift; sourceTree = "<group>"; };
+		F2547C7C23FAE54D005F01F4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		F2547C8023FAF57C005F01F4 /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
+		F2547C8223FAF5F0005F01F4 /* AppsDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsDetailedViewController.swift; sourceTree = "<group>"; };
+		F25D5AFA23F71E32009E0B19 /* ResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetViewController.swift; sourceTree = "<group>"; };
+		F25D5AFC23F721BB009E0B19 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F25D5AFE23F7228B009E0B19 /* MapModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModels.swift; sourceTree = "<group>"; };
+		F25D5B0023F724A4009E0B19 /* usage.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = usage.csv; path = ../../bienestardidi/bienestarDiana/Utils/usage.csv; sourceTree = "<group>"; };
+		F267670A23F5642B00AB6C55 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F267670C23F564E900AB6C55 /* DataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelpers.swift; sourceTree = "<group>"; };
+		F267F1A223F59A4F00AF6A8B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F29270B823F5F623007EB5B4 /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		F29270BA23F5F901007EB5B4 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		F2BA922623FB642900CC3241 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F2BA922C23FBF80F00CC3241 /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		F2BA922E23FC0B1100CC3241 /* ControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
 		F2E3DFB823F3100900024FA0 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		F444AB811A74008A8C0FCC1A /* Pods_DigitalVeil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigitalVeil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +69,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91410C1F7A4BD39418162920 /* Pods_DigitalVeil.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B11877E243D6BD0B0E2E54D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A167C180F97C84901915676 /* Pods-DigitalVeil.debug.xcconfig */,
+				280486A3A35695B65543CCE9 /* Pods-DigitalVeil.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C88E63CBB7CA211369E11C49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F444AB811A74008A8C0FCC1A /* Pods_DigitalVeil.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F235EB1723F2643400F29D9C = {
 			isa = PBXGroup;
 			children = (
 				F235EB2223F2643400F29D9C /* DigitalVeil */,
 				F235EB2123F2643400F29D9C /* Products */,
+				2B11877E243D6BD0B0E2E54D /* Pods */,
+				C88E63CBB7CA211369E11C49 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +114,7 @@
 		F235EB2223F2643400F29D9C /* DigitalVeil */ = {
 			isa = PBXGroup;
 			children = (
+				F25D5B0023F724A4009E0B19 /* usage.csv */,
 				F235EB2323F2643500F29D9C /* AppDelegate.swift */,
 				F235EB2523F2643500F29D9C /* ViewController.swift */,
 				F235EB2723F2643500F29D9C /* Main.storyboard */,
@@ -63,6 +122,22 @@
 				F235EB2A23F2643700F29D9C /* Assets.xcassets */,
 				F235EB2C23F2643700F29D9C /* LaunchScreen.storyboard */,
 				F235EB2F23F2643700F29D9C /* Info.plist */,
+				F267670A23F5642B00AB6C55 /* LoginViewController.swift */,
+				F267670C23F564E900AB6C55 /* DataHelpers.swift */,
+				F267F1A223F59A4F00AF6A8B /* User.swift */,
+				F29270B823F5F623007EB5B4 /* NetworkUtils.swift */,
+				F29270BA23F5F901007EB5B4 /* Register.swift */,
+				F25D5AFA23F71E32009E0B19 /* ResetViewController.swift */,
+				F25D5AFC23F721BB009E0B19 /* MapViewController.swift */,
+				F25D5AFE23F7228B009E0B19 /* MapModels.swift */,
+				F2547C7823FADDCC005F01F4 /* ProfileViewController.swift */,
+				F2547C7A23FADEF0005F01F4 /* ManagementViewController.swift */,
+				F2547C7C23FAE54D005F01F4 /* CollectionViewCell.swift */,
+				F2547C8023FAF57C005F01F4 /* DetailedViewController.swift */,
+				F2547C8223FAF5F0005F01F4 /* AppsDetailedViewController.swift */,
+				F2BA922623FB642900CC3241 /* RegisterViewController.swift */,
+				F2BA922C23FBF80F00CC3241 /* StatisticsViewController.swift */,
+				F2BA922E23FC0B1100CC3241 /* ControlViewController.swift */,
 			);
 			path = DigitalVeil;
 			sourceTree = "<group>";
@@ -74,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F235EB3223F2643700F29D9C /* Build configuration list for PBXNativeTarget "DigitalVeil" */;
 			buildPhases = (
+				B41AFB5BD4B6C263DB5683DC /* [CP] Check Pods Manifest.lock */,
 				F235EB1C23F2643400F29D9C /* Sources */,
 				F235EB1D23F2643400F29D9C /* Frameworks */,
 				F235EB1E23F2643400F29D9C /* Resources */,
+				9D6C8BCBBD28B43A614E5C35 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25D5B0123F724A4009E0B19 /* usage.csv in Resources */,
 				F2E3DFB923F3100900024FA0 /* Login.storyboard in Resources */,
 				F235EB2E23F2643700F29D9C /* LaunchScreen.storyboard in Resources */,
 				F235EB2B23F2643700F29D9C /* Assets.xcassets in Resources */,
@@ -134,12 +212,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9D6C8BCBBD28B43A614E5C35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigitalVeil/Pods-DigitalVeil-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigitalVeil/Pods-DigitalVeil-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DigitalVeil/Pods-DigitalVeil-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B41AFB5BD4B6C263DB5683DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DigitalVeil-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F235EB1C23F2643400F29D9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2547C8123FAF57C005F01F4 /* DetailedViewController.swift in Sources */,
+				F267670B23F5642B00AB6C55 /* LoginViewController.swift in Sources */,
+				F2547C7B23FADEF0005F01F4 /* ManagementViewController.swift in Sources */,
+				F267670D23F564E900AB6C55 /* DataHelpers.swift in Sources */,
+				F2BA922F23FC0B1100CC3241 /* ControlViewController.swift in Sources */,
+				F29270BB23F5F901007EB5B4 /* Register.swift in Sources */,
 				F235EB2623F2643500F29D9C /* ViewController.swift in Sources */,
+				F25D5AFD23F721BB009E0B19 /* MapViewController.swift in Sources */,
+				F2BA922D23FBF80F00CC3241 /* StatisticsViewController.swift in Sources */,
+				F267F1A323F59A4F00AF6A8B /* User.swift in Sources */,
+				F2547C7923FADDCC005F01F4 /* ProfileViewController.swift in Sources */,
+				F2547C7D23FAE54E005F01F4 /* CollectionViewCell.swift in Sources */,
+				F2547C8323FAF5F0005F01F4 /* AppsDetailedViewController.swift in Sources */,
+				F2BA922723FB642900CC3241 /* RegisterViewController.swift in Sources */,
+				F29270B923F5F623007EB5B4 /* NetworkUtils.swift in Sources */,
+				F25D5AFB23F71E32009E0B19 /* ResetViewController.swift in Sources */,
+				F25D5AFF23F7228B009E0B19 /* MapModels.swift in Sources */,
 				F235EB2423F2643500F29D9C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +360,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -278,12 +415,14 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		F235EB3323F2643700F29D9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A167C180F97C84901915676 /* Pods-DigitalVeil.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +440,7 @@
 		};
 		F235EB3423F2643700F29D9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 280486A3A35695B65543CCE9 /* Pods-DigitalVeil.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

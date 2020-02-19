@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (4.0.0)
+  - Charts (3.4.0):
+    - Charts/Core (= 3.4.0)
+  - Charts/Core (3.4.0)
+  - SkyFloatingLabelTextField (3.8.0)
+
+DEPENDENCIES:
+  - Alamofire (= 4.0)
+  - Charts
+  - SkyFloatingLabelTextField (~> 3.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Charts
+    - SkyFloatingLabelTextField
+
+SPEC CHECKSUMS:
+  Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
+  Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
+  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
+
+PODFILE CHECKSUM: 5dfec86f0019e6e0c0dd7a281364dd1465c022a8
+
+COCOAPODS: 1.8.4
