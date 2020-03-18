@@ -12,18 +12,51 @@ import UIKit
 
 class ControlViewController : UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
-    var data : [MapModels] = []
-    var filteredData : [MapModels] = []
+    //Initialization
+    var data : [App] = []
+    var filteredData : [App] = []
     var filterAux : [String] = []
     
     @IBOutlet weak var myCollectionView: UICollectionView!
-
+    @IBOutlet weak var beginingDP: UIDatePicker!
+    @IBOutlet weak var endingDP: UIDatePicker!
+    
+    //Dynamic function to get hours by formatting dates from the DatePickers to Calendars
+    func formatDate(date:Date) -> String {
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: date)
+        let minute = calendar.component(.minute, from: date)
+        let dateString = "\(hour) hours and \(minute) minute/s"
+        
+        return dateString
+    }
+    
+    //Function that validates and format both dates and calls the function that saves the rule, also gives a response to the user if it is possible to add a new rule.
+    func checkDates(){
+        let beginingHour = beginingDP.date
+        let endingHour = endingDP.date
+        
+        print(beginingHour)
+        print(endingHour)
+        
+        let beginingHourFormated = formatDate(date: beginingHour)
+        let endingHourFormated = formatDate(date: endingHour)
+    
+        if (beginingHourFormated > endingHourFormated){
+            self.present(DataHelpers.displayAlert(userMessage: "Ending hour must be later than begining one", alertType: 0), animated: true, completion: nil)
+        } else if (endingHourFormated > beginingHourFormated) {
+            //TODO - PETICIÓN DE GUARDADO
+            self.present(DataHelpers.displayAlert(userMessage: "Control configuration saved", alertType: 1), animated: true, completion: nil)
+        } else if (endingHourFormated == beginingHourFormated) {
+            self.present(DataHelpers.displayAlert(userMessage: "Selected times must be different", alertType: 0), animated: true, completion: nil)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.myCollectionView.dataSource = self
         self.myCollectionView.delegate = self
-        
         data = DataHelpers.parseCsvData()
         
         //Filter the data array in order to show only one app icon. TODO
@@ -34,8 +67,8 @@ class ControlViewController : UIViewController, UICollectionViewDataSource, UICo
                 filterAux.append(element.App)
                 filteredData.append(element)
             }
-            
         }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -47,7 +80,6 @@ class ControlViewController : UIViewController, UICollectionViewDataSource, UICo
         let identifier = "ControlCellID"
         let cell = self.myCollectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! CollectionViewCell
         
-        let appsTime = DataHelpers.getAppDates(dataModel: data, app: filteredData[indexPath.row].App)
         //Set of the labels with all variables
         let name = filteredData[indexPath.row].App
         getImageLiteral(name: name, cell: cell)
@@ -81,7 +113,6 @@ class ControlViewController : UIViewController, UICollectionViewDataSource, UICo
         }
     }
     
-    
     //Function to get the real reference for every image, this one is design to pass the string to the next view
     func getImageLiteral(name: String) -> String {
         //Switch of the image name
@@ -113,4 +144,10 @@ class ControlViewController : UIViewController, UICollectionViewDataSource, UICo
         
         return newName
     }
+    
+    //function that is being called whenever the user press the "Save" button
+    @IBAction func saveButton(_ sender: Any) {
+        checkDates()
+    }
+    
 }

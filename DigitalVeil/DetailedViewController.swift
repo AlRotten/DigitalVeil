@@ -10,7 +10,7 @@ import UIKit
 
 class DetailedViewController :  UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var data: [MapModels] = []
+    var data: [App] = []
     
     @IBOutlet weak var myTableView: UITableView!
     
@@ -22,7 +22,7 @@ class DetailedViewController :  UIViewController, UITableViewDelegate, UITableVi
     
     var detailName : String?
     var detailImageString : String?
-    var filteredData : [MapModels] = []
+    var filteredData : [App] = []
     
     var totalTimeApp : String?
     override func viewDidLoad() {

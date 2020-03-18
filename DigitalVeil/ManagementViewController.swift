@@ -10,8 +10,8 @@ import UIKit
 class ManagementViewController : UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     //Initialization
-    var data : [MapModels] = []
-    var filteredData : [MapModels] = []
+    var data : [App] = []
+    var filteredData : [App] = []
     var filterAux : [String] = []
     
     
@@ -39,6 +39,7 @@ class ManagementViewController : UIViewController, UICollectionViewDataSource, U
         print(filteredData)
     }
     
+    // Function called before the view is loaded
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
@@ -160,7 +161,6 @@ class ManagementViewController : UIViewController, UICollectionViewDataSource, U
         }
     }
     
-
     //Function to get the real reference for every image, this one is design to pass the string to the next view
     func getImageLiteral(name: String) -> String {
         //Switch of the image name

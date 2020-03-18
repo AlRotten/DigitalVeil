@@ -20,11 +20,12 @@
 		F2547C8323FAF5F0005F01F4 /* AppsDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2547C8223FAF5F0005F01F4 /* AppsDetailedViewController.swift */; };
 		F25D5AFB23F71E32009E0B19 /* ResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D5AFA23F71E32009E0B19 /* ResetViewController.swift */; };
 		F25D5AFD23F721BB009E0B19 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D5AFC23F721BB009E0B19 /* MapViewController.swift */; };
-		F25D5AFF23F7228B009E0B19 /* MapModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D5AFE23F7228B009E0B19 /* MapModels.swift */; };
+		F25D5AFF23F7228B009E0B19 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D5AFE23F7228B009E0B19 /* App.swift */; };
 		F25D5B0123F724A4009E0B19 /* usage.csv in Resources */ = {isa = PBXBuildFile; fileRef = F25D5B0023F724A4009E0B19 /* usage.csv */; };
 		F267670B23F5642B00AB6C55 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F267670A23F5642B00AB6C55 /* LoginViewController.swift */; };
 		F267670D23F564E900AB6C55 /* DataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F267670C23F564E900AB6C55 /* DataHelpers.swift */; };
 		F267F1A323F59A4F00AF6A8B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F267F1A223F59A4F00AF6A8B /* User.swift */; };
+		F291F34423FE726400DC9AE5 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F291F34323FE726400DC9AE5 /* MockData.swift */; };
 		F29270B923F5F623007EB5B4 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29270B823F5F623007EB5B4 /* NetworkUtils.swift */; };
 		F29270BB23F5F901007EB5B4 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29270BA23F5F901007EB5B4 /* Register.swift */; };
 		F2BA922723FB642900CC3241 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BA922623FB642900CC3241 /* RegisterViewController.swift */; };
@@ -50,11 +51,12 @@
 		F2547C8223FAF5F0005F01F4 /* AppsDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsDetailedViewController.swift; sourceTree = "<group>"; };
 		F25D5AFA23F71E32009E0B19 /* ResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetViewController.swift; sourceTree = "<group>"; };
 		F25D5AFC23F721BB009E0B19 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		F25D5AFE23F7228B009E0B19 /* MapModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModels.swift; sourceTree = "<group>"; };
+		F25D5AFE23F7228B009E0B19 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		F25D5B0023F724A4009E0B19 /* usage.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = usage.csv; path = ../../bienestardidi/bienestarDiana/Utils/usage.csv; sourceTree = "<group>"; };
 		F267670A23F5642B00AB6C55 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F267670C23F564E900AB6C55 /* DataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelpers.swift; sourceTree = "<group>"; };
 		F267F1A223F59A4F00AF6A8B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F291F34323FE726400DC9AE5 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		F29270B823F5F623007EB5B4 /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
 		F29270BA23F5F901007EB5B4 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		F2BA922623FB642900CC3241 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -114,32 +116,57 @@
 		F235EB2223F2643400F29D9C /* DigitalVeil */ = {
 			isa = PBXGroup;
 			children = (
+				F291F34723FF2DC500DC9AE5 /* Models */,
+				F291F34623FF2D8600DC9AE5 /* Utils */,
+				F291F34523FF2C5D00DC9AE5 /* User Management */,
 				F25D5B0023F724A4009E0B19 /* usage.csv */,
 				F235EB2323F2643500F29D9C /* AppDelegate.swift */,
 				F235EB2523F2643500F29D9C /* ViewController.swift */,
-				F235EB2723F2643500F29D9C /* Main.storyboard */,
-				F2E3DFB823F3100900024FA0 /* Login.storyboard */,
 				F235EB2A23F2643700F29D9C /* Assets.xcassets */,
 				F235EB2C23F2643700F29D9C /* LaunchScreen.storyboard */,
+				F235EB2723F2643500F29D9C /* Main.storyboard */,
 				F235EB2F23F2643700F29D9C /* Info.plist */,
-				F267670A23F5642B00AB6C55 /* LoginViewController.swift */,
-				F267670C23F564E900AB6C55 /* DataHelpers.swift */,
-				F267F1A223F59A4F00AF6A8B /* User.swift */,
-				F29270B823F5F623007EB5B4 /* NetworkUtils.swift */,
-				F29270BA23F5F901007EB5B4 /* Register.swift */,
-				F25D5AFA23F71E32009E0B19 /* ResetViewController.swift */,
 				F25D5AFC23F721BB009E0B19 /* MapViewController.swift */,
-				F25D5AFE23F7228B009E0B19 /* MapModels.swift */,
 				F2547C7823FADDCC005F01F4 /* ProfileViewController.swift */,
 				F2547C7A23FADEF0005F01F4 /* ManagementViewController.swift */,
 				F2547C7C23FAE54D005F01F4 /* CollectionViewCell.swift */,
 				F2547C8023FAF57C005F01F4 /* DetailedViewController.swift */,
 				F2547C8223FAF5F0005F01F4 /* AppsDetailedViewController.swift */,
-				F2BA922623FB642900CC3241 /* RegisterViewController.swift */,
 				F2BA922C23FBF80F00CC3241 /* StatisticsViewController.swift */,
 				F2BA922E23FC0B1100CC3241 /* ControlViewController.swift */,
+				F291F34323FE726400DC9AE5 /* MockData.swift */,
 			);
 			path = DigitalVeil;
+			sourceTree = "<group>";
+		};
+		F291F34523FF2C5D00DC9AE5 /* User Management */ = {
+			isa = PBXGroup;
+			children = (
+				F2E3DFB823F3100900024FA0 /* Login.storyboard */,
+				F267670A23F5642B00AB6C55 /* LoginViewController.swift */,
+				F25D5AFA23F71E32009E0B19 /* ResetViewController.swift */,
+				F2BA922623FB642900CC3241 /* RegisterViewController.swift */,
+			);
+			path = "User Management";
+			sourceTree = "<group>";
+		};
+		F291F34623FF2D8600DC9AE5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F29270B823F5F623007EB5B4 /* NetworkUtils.swift */,
+				F267670C23F564E900AB6C55 /* DataHelpers.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F291F34723FF2DC500DC9AE5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F29270BA23F5F901007EB5B4 /* Register.swift */,
+				F25D5AFE23F7228B009E0B19 /* App.swift */,
+				F267F1A223F59A4F00AF6A8B /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +294,7 @@
 				F29270BB23F5F901007EB5B4 /* Register.swift in Sources */,
 				F235EB2623F2643500F29D9C /* ViewController.swift in Sources */,
 				F25D5AFD23F721BB009E0B19 /* MapViewController.swift in Sources */,
+				F291F34423FE726400DC9AE5 /* MockData.swift in Sources */,
 				F2BA922D23FBF80F00CC3241 /* StatisticsViewController.swift in Sources */,
 				F267F1A323F59A4F00AF6A8B /* User.swift in Sources */,
 				F2547C7923FADDCC005F01F4 /* ProfileViewController.swift in Sources */,
@@ -275,7 +303,7 @@
 				F2BA922723FB642900CC3241 /* RegisterViewController.swift in Sources */,
 				F29270B923F5F623007EB5B4 /* NetworkUtils.swift in Sources */,
 				F25D5AFB23F71E32009E0B19 /* ResetViewController.swift in Sources */,
-				F25D5AFF23F7228B009E0B19 /* MapModels.swift in Sources */,
+				F25D5AFF23F7228B009E0B19 /* App.swift in Sources */,
 				F235EB2423F2643500F29D9C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
