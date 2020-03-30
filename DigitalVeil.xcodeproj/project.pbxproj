@@ -37,6 +37,7 @@
 /* Begin PBXFileReference section */
 		280486A3A35695B65543CCE9 /* Pods-DigitalVeil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalVeil.release.xcconfig"; path = "Target Support Files/Pods-DigitalVeil/Pods-DigitalVeil.release.xcconfig"; sourceTree = "<group>"; };
 		8A167C180F97C84901915676 /* Pods-DigitalVeil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalVeil.debug.xcconfig"; path = "Target Support Files/Pods-DigitalVeil/Pods-DigitalVeil.debug.xcconfig"; sourceTree = "<group>"; };
+		F200A306242A8CF000477CA9 /* usage.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = usage.csv; sourceTree = "<group>"; };
 		F235EB2023F2643400F29D9C /* DigitalVeil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalVeil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F235EB2323F2643500F29D9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F235EB2523F2643500F29D9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +96,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F200A305242A8C6A00477CA9 /* CollectionViews Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F2547C7C23FAE54D005F01F4 /* CollectionViewCell.swift */,
+				F2547C8223FAF5F0005F01F4 /* AppsDetailedViewController.swift */,
+				F2547C8023FAF57C005F01F4 /* DetailedViewController.swift */,
+			);
+			path = "CollectionViews Classes";
+			sourceTree = "<group>";
+		};
 		F235EB1723F2643400F29D9C = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +127,7 @@
 		F235EB2223F2643400F29D9C /* DigitalVeil */ = {
 			isa = PBXGroup;
 			children = (
+				F200A305242A8C6A00477CA9 /* CollectionViews Classes */,
 				F291F34723FF2DC500DC9AE5 /* Models */,
 				F291F34623FF2D8600DC9AE5 /* Utils */,
 				F291F34523FF2C5D00DC9AE5 /* User Management */,
@@ -129,12 +141,8 @@
 				F25D5AFC23F721BB009E0B19 /* MapViewController.swift */,
 				F2547C7823FADDCC005F01F4 /* ProfileViewController.swift */,
 				F2547C7A23FADEF0005F01F4 /* ManagementViewController.swift */,
-				F2547C7C23FAE54D005F01F4 /* CollectionViewCell.swift */,
-				F2547C8023FAF57C005F01F4 /* DetailedViewController.swift */,
-				F2547C8223FAF5F0005F01F4 /* AppsDetailedViewController.swift */,
 				F2BA922C23FBF80F00CC3241 /* StatisticsViewController.swift */,
 				F2BA922E23FC0B1100CC3241 /* ControlViewController.swift */,
-				F291F34323FE726400DC9AE5 /* MockData.swift */,
 			);
 			path = DigitalVeil;
 			sourceTree = "<group>";
@@ -165,6 +173,8 @@
 				F29270BA23F5F901007EB5B4 /* Register.swift */,
 				F25D5AFE23F7228B009E0B19 /* App.swift */,
 				F267F1A223F59A4F00AF6A8B /* User.swift */,
+				F200A306242A8CF000477CA9 /* usage.csv */,
+				F291F34323FE726400DC9AE5 /* MockData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
